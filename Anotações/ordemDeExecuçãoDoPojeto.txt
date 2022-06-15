@@ -15,4 +15,31 @@
 11 - Trailer nos filmes, foi implementado no Row.js, porque é la onde fica a imagem do filme:
   - Lib pra buscar o filme: Movie-Trailer
   - Lib pra renderizar o video na tela: React-Player ou react-youtube
-
+12 - Deploy na firebase:
+  - conta do google na firebase
+  - criar projeto na firebase
+   - Aceita tudo que o firebase pedir pra aceitar
+   - Coloca Brasil
+  - Criamos o projeto pra usar a ferramenta hosting do firebse
+  - Documentação: https://firebase.google.com/docs/hosting
+  - No terminal do projeto: 
+    - npm i -g firebase-tools
+    - firebase login: conta da sua firebase
+    - firebase init
+    - Se ele pedir permissões, pode aceitar
+    - Ele vai pedir pra voce escolher alguma opção:
+      - Nesse projeto escolhemos a: Hosting: Configure files for firebase hosting and (optionally) set up github action deploys, essa opção é para configurar os arquivos pro firebase hosting. Obs: não usamo o github action
+    - SPACEBAR
+    - Enter
+    - Ele vai pedir pra voce escolher alguma opção:
+      - Use an existing project -> no caso o projeto que foi criado na firebase
+    - Enter
+    - Enter de novo
+    - Agora iremos subir um projeto react, e o firebase pergunta a onde ele vai pegar os arquivos pra ele fazer o deploy. Quando usamos o localhost ele esta lendo os arquivos da nossa pasta, mas na produção quando alguem for acessar  a url, ele não vai ter as mesmas info os mesmos arquivos que a gente tem nesse momento de desenvolvimento, ele vai ter arquivos menores minificados pra ocupar menos espaço na nuvem. e pra que isso seja feito é gerando um build e como a gente tem um projeto react a gente escreve:
+    - build -> que é a pasta que o firebase vai usar de nosso diretorio que a gente esta pra pegar os arquivos pra fazer o deploy
+    - Aceita pra reescrever
+    - Nega pra automaticamente fazer os deploys de acordo com o github, ou seja github actions. Obs: a pasta build não vai para o github depois desse todo processo
+    - Agora a gente é quem vai gerar o build, em vez do default
+    - npm run build -> gera o build da nossa aplicação, a minificação pra gastar menos de banda, memoria etc da pessoa que vai usar a nossa aplicação
+    - firebase deploy
+    - link gerado
