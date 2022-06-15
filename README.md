@@ -8,6 +8,19 @@
 - Component with direct video URL: [React-player](https://www.npmjs.com/package/react-player)
 - CSS
 
+# Deploy
+- [deploy(firebase)](https://firebase.google.com/docs/hosting): https://netflix-clone-1a153.web.app
+
+# Features:
+
+-Uso da API da TMDB para pegar os filmes;
+-Diferença na seção em alta para as outras;
+- Banner principal com o filme random original da Netflix, o destaque do momento:
+	- Com titulo;
+	- Com Imagem;
+	- e com os Botões de Assistir e Minha lista.
+- Conseguir ver o trailer dos filmes.
+
 ## Available Scripts
 
 In the project directory, you can run:
