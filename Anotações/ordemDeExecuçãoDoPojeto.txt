@@ -1,0 +1,18 @@
+1 - npx create-react-app my-app
+2 - Limpar o projeto dos arquivos desnecessários:
+  1 - logo.svg
+  2 - App.test.js
+  3 - setupTests.js
+  4 - App.js -> Limpa dentro do className="App" e os imports
+3 - Npm start
+4 - ver a API que iremos usar -> TMDB
+5 - Testar a API criada com a url da API com o method GET -> Postman(plataforma de API para desenvolvedores projetar, construir, testar e iterar suas APIs) ou o Insomnia
+6 - Criar arquivo de config da API usada com os endpoints das categorias da API -> api.js
+7 - Metodo pra requisitar a API - > api.js
+8 - montar as fileiras de cada categoria, no caso um componente novo -> row.js em app.js
+9 - montar a parte dos destaques -> Banner.js
+10 - montar a parte da nav -> Nav.js
+11 - Trailer nos filmes, foi implementado no Row.js, porque é la onde fica a imagem do filme:
+  - Lib pra buscar o filme: Movie-Trailer
+  - Lib pra renderizar o video na tela: React-Player ou react-youtube
+

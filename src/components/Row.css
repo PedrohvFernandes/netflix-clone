@@ -1,0 +1,33 @@
+.row-container {
+  margin-left: 2rem;
+}
+
+.row-cards {
+  display: flex;
+  overflow-y:hidden;
+  overflow-x: scroll;
+  padding: 2rem;
+}
+
+.row-cards::-webkit-scrollbar{
+  display: none;
+}
+
+.movie-card,
+.movie-card-lange{
+  width: 100%;
+  margin-bottom: 1rem;
+  transition: transform 450ms;
+  object-fit: contain;
+}
+
+.movie-card{
+  max-height: 15rem;
+}
+.movie-card-large{
+  max-height: 28rem;
+}
+.movie-card:hover{
+  transform: scale(1.08);
+  cursor: pointer;
+}

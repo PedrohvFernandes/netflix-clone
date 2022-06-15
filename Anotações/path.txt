@@ -1,0 +1,36 @@
+Quando a gente esta fazendo uma requisição com uma api, a gente tem um host que é o servidor, é a onde esta a info
+
+e temos o path que é como a gente fala pra esse host o que é que a gente precisa, é timo saber de um predio e voce precisar de um numero
+para saber de um apartamento.
+
+Entao o predio é po host, a onde esta as info e o numero da casa é o path, é ele é quem vai trazer a info pra a gente.
+
+Host
+https://api.themoviedb.org/3
+
+Path
+/movie/550?api_key=4d52a47ee50ee715bcc73cff19755d54
+
+
+pegando trending:
+
+https://developers.themoviedb.org/3/trending/get-trending
+
+/trending/{media_type}/{time_window}
+
+/trending/all/week?api_key=4d52a47ee50ee715bcc73cff19755d54
+
+
+em pt-br:
+
+https://www.themoviedb.org/talk/5704e17092514146b8000abd?language=pt
+examples:
+https://api.themoviedb.org/3/search/movie?api_key=###&query=batman+v+superman&language=pt-BR
+https://api.themoviedb.org/3/search/tv?api_key=###&query=daredevil&language=pt-BR
+
+
+/trending/all/week?api_key=4d52a47ee50ee715bcc73cff19755d54&language=pt-BR
+
+
+Host            com        path
+https://api.themoviedb.org/3/trending/all/week?api_key=4d52a47ee50ee715bcc73cff19755d54&language=pt-BR

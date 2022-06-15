@@ -1,0 +1,3 @@
+Row.js -> No navegador na aplicação em inspecionar o elemento em fetchMovies um console.log colocando os dados(data) da para ver o que está retornando da req
+
+Outra maneira -> Em inspecionar no navegador, em sources -> command ou ctrl + p -> nome do arquivo -> banner.js -> e ao inves do console logo, eu faço um breakpoint na linha do setMovies

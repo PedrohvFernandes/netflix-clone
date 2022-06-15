@@ -1,0 +1,8 @@
+Dom Html -> Hierarquia de todos os elementos da tela
+
+Dom React -> Existe pra poder facilitar e ficar mais rapido de renderizar e atualizar a pagina, pra voce não ter que atualizar a pagina toda hora que alguma coisa mudar
+
+
+hook useState -> serve para falar para virtual dom do React, alem dele guardar info no estado dele, ele consegue falar pro virtual dom que quando algo mudar voce renderiza no caso o React.
+
+hook useEffect -> Toda vez que a gente renderizar a pagina, toda vez que o React for renderizar o virtual dom dele, ele vai fazer o que esta dentro do useEffect. Pode ser passado pro useEffect um array vazio que so faz ele atualizar quando a pagina for renderizada ou passar um estado/variavel(As dependencias dele) que foi mudado que ele vai executar o que esta dentro dele de novo.

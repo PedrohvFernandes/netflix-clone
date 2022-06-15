@@ -1,0 +1,4 @@
+Quando é conversado com uma api, a api fala pra você se esta tudo certo ou não com codigos e cada codigo tem um significado.
+
+400, 401, 402, 403, 404 etc -> não foi possivel concluir a promessa, e tem algum erro no meio. O 404 é o mais normal que é que não foi possivel concluir a requisição porque a url não existe.
+200 etc -> foi possivel concluir a promessa

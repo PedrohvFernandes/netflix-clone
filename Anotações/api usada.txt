@@ -1,0 +1,22 @@
+TMDB = https://www.themoviedb.org/documentation/api
+
+https://www.themoviedb.org/settings/api
+
+Documentação para ver os endpoint
+https://developers.themoviedb.org/3
+
+
+Testar Comunicação API: https://lively-moon-127409.postman.co/workspace/4041f4c7-911d-4760-8c9b-f1e9de8b1a9e/overview?feature_overview=show
+https://www.postman.com/downloads/
+Obs: poderia usar o insomnia para testar a comunicação
+
+No postman:
+New
+HTTP Request
+save
+name: test-TMDB
+new collection: Netflix-clone
+em test-tmdb: METHOD: Get: link da api: https://api.themoviedb.org/3/movie/550?api_key=4d52a47ee50ee715bcc73cff19755d54
+send
+
+Api testada

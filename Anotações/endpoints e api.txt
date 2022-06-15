@@ -1,0 +1,7 @@
+Endpoints -> Pra cada categoria que  a gente precisa é um endpoint 
+
+
+A gente nesse caso tem endpoints para filmes originais da netflix, para filmes de terror, populares, documentarios, comedia etc.
+
+Documentação para ver os endpoint
+https://developers.themoviedb.org/3
