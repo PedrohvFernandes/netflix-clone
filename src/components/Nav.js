@@ -3,15 +3,24 @@ import './Nav.css'
 export default function Nav() {
   const [show, setShow] = React.useState(false)
 
-  useEffect(() => {
-    window.addEventListener('scroll', () => {
-      setShow(window.scrollY > 100);
-    })
+  const NavBarVisibility = () => {
+    if(window.scrollY > 100){
+      setShow(true)
+    } else{
+      setShow(false)
+    }
+  }
 
+  useEffect(() => {
+    // window.addEventListener('scroll', () => {
+    //   setShow(window.scrollY > 100);
+    // })
+    window.addEventListener('scroll', NavBarVisibility)
+    
     // Pra remover esse evento quando ele fecha a pagina ou quando ele termina de carregar ou quando esse componente é destruido.Porque ai a gente tem esse evento nesse componente e talvez o outro não precise e quando fecha ele continua no window e isso pode ser ruim.
-    // return () => {
-    //   window.removeEventListener('scroll')
-    // }
+    return () => {
+      window.removeEventListener('scroll', NavBarVisibility)
+    }
   }, [])
 
   return (
