@@ -17,8 +17,8 @@
 
 # Features:
 
--Uso da API da TMDB para pegar os filmes;
--Diferença na seção em alta para as outras;
+- Uso da API da TMDB para pegar os filmes;
+- Diferença na seção em alta para as outras;
 - Banner principal com o filme random original da Netflix, o destaque do momento:
 	- Com titulo;
 	- Com Imagem;
