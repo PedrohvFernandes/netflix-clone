@@ -34,6 +34,8 @@ export default function Banner() {
     return str?.length > num ? str.slice(0, num - 1) + '...' : str
   }
 
+  let nameMovie = movie?.title || movie?.name || movie?.original_name
+
   return (
     <header
       className="banner-container"
@@ -47,10 +49,16 @@ export default function Banner() {
         <h1 className="banner-title">
           {/* O filme nem sempre tem o nome do titulo: por isso a gente pega o title dele
           ou o nome dele ou o original nome dele */}
-          {movie?.title || movie?.name || movie?.original_name}
+          {nameMovie}
         </h1>
         <div className="banner-button-container">
-          <button className="banner-button">Assistir</button>
+          <a
+            href={`https://www.google.com/search?q=${nameMovie}`}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <button className="banner-button">Assistir</button>
+          </a>
           <button className="banner-button">Minha Lista</button>
         </div>
         <div className="banner-description">

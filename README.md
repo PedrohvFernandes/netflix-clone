@@ -8,6 +8,10 @@
 - Component with direct video URL: [React-player](https://www.npmjs.com/package/react-player)
 - CSS
 
+# Exchanged technologies
+
+- Component with direct video URL: [React-player](https://www.npmjs.com/package/react-player) for [React-youtube](https://www.npmjs.com/package/react-youtube)
+
 # Deploy
 - [deploy(firebase)](https://firebase.google.com/docs/hosting): https://netflix-clone-1a153.web.app
 

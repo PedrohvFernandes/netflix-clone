@@ -1,7 +1,8 @@
 // rfc -> snippet -> cria um componente react
-import movieTrailer from 'movie-trailer'
 import React, { useEffect } from 'react'
-import ReactPlayer from 'react-player'
+import movieTrailer from 'movie-trailer'
+// import ReactPlayer from 'react-player'
+import YouTube from 'react-youtube'
 import { getMovies } from '../api'
 
 import './Row.css'
@@ -22,11 +23,30 @@ function Row({ title, path, isLarge }) {
     } else {
       movieTrailer(movie?.title || movie?.name || movie?.original_name || '')
         .then(url => {
-          setTrailerUrl(url)
+          if (url === null) {
+            console.log('Não foi possível encontrar o trailer')
+            setTrailerUrl('J1USmpnJ1A8')
+          } else {
+            // https://developer.mozilla.org/pt-BR/docs/Web/API/URLSearchParams
+            // https://developer.mozilla.org/en-US/docs/Web/API/URL/URL
+            let urlParams = new URLSearchParams(new URL(url).search)
+            //https://www.youtube.com/watch?v=pEWZQF-iTU8
+            setTrailerUrl(urlParams.get('v')) //pEWZQF-iTU8
+
+            // setTrailerUrl(url)
+          }
         })
         .catch(err => {
           console.log('HandleOnClick fetching movie trailer', err)
         })
+    }
+  }
+
+  const opts = {
+    height: '390',
+    width: '100%',
+    playerVars: {
+      autoplay: 1
     }
   }
 
@@ -70,7 +90,10 @@ function Row({ title, path, isLarge }) {
           )
         })}
       </div>
-      {trailerUrl && <ReactPlayer playing={true} url={trailerUrl} />}
+      {/* {trailerUrl && <ReactPlayer playing={true} url={trailerUrl} />} */}
+      {trailerUrl && (
+        <YouTube videoId={trailerUrl} url={trailerUrl} opts={opts} />
+      )}
     </div>
   )
 }
