@@ -25,6 +25,10 @@
 	- e com os Botões de Assistir e Minha lista.
 - Conseguir ver o trailer dos filmes.
 
+# Project image:
+
+<img src='https://github.com/PedrohvFernandes/netflix-clone/blob/main/public/screenshot/Screen.png'>
+
 ## Available Scripts
 
 In the project directory, you can run:
